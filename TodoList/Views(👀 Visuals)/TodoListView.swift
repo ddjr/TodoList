@@ -13,7 +13,7 @@ struct TodoListView: View {
     }
 }
 
-struct TodoListItemsView_Previews: PreviewProvider {
+struct TodoListView_Previews: PreviewProvider {
     static var previews: some View {
         TodoListView()
     }
