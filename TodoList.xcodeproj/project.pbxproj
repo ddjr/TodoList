@@ -30,6 +30,7 @@
 		3EE2E7E12A58A08700F9CF50 /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E02A58A08700F9CF50 /* NewItemViewModel.swift */; };
 		3EE2E7E32A58A51F00F9CF50 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */; };
 		3EE2E7E52A58A52E00F9CF50 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */; };
+		3EE2E7E82A58A85A00F9CF50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		3EE2E7E02A58A08700F9CF50 /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
 		3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				3E6966002A58844800034D34 /* MainView.swift */,
 				3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */,
+				3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */,
 				3E6966192A589D9D00034D34 /* ProfileView.swift */,
 				3EE2E7D42A589F8B00F9CF50 /* RegisterView.swift */,
 				3E69661B2A589DBA00034D34 /* TodoListView.swift */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E6966012A58844800034D34 /* MainView.swift in Sources */,
+				3EE2E7E82A58A85A00F9CF50 /* HeaderView.swift in Sources */,
 				3E69661C2A589DBA00034D34 /* TodoListView.swift in Sources */,
 				3EE2E7E12A58A08700F9CF50 /* NewItemViewModel.swift in Sources */,
 				3EE2E7DD2A58A05A00F9CF50 /* TodoListViewModel.swift in Sources */,
