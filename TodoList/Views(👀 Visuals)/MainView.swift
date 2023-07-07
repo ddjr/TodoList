@@ -8,6 +8,7 @@
 import SwiftUI
 
 // MARK: Main View
+
 struct MainView: View {
     var body: some View {
         VStack {
