@@ -24,7 +24,7 @@ class LoginViewModel: ObservableObject {
         
     }
     
-    func validateText() -> Bool {
+    private func validateText() -> Bool {
         errorMessage = ""
 
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,

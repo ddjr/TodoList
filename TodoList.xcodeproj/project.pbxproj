@@ -32,6 +32,7 @@
 		3EE2E7E52A58A52E00F9CF50 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */; };
 		3EE2E7E82A58A85A00F9CF50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */; };
 		3EE2E7EA2A5AF0A200F9CF50 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E92A5AF0A200F9CF50 /* TLButton.swift */; };
+		3EE2E7EC2A5B0AA400F9CF50 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7EB2A5B0AA400F9CF50 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3EE2E7E92A5AF0A200F9CF50 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		3EE2E7EB2A5B0AA400F9CF50 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				3EE2E7C62A589EC000F9CF50 /* User.swift */,
 				3EE2E7C82A589ED100F9CF50 /* Todo.swift */,
+				3EE2E7EB2A5B0AA400F9CF50 /* Extensions.swift */,
 			);
 			path = "Models(🐈🐈‍⬛🦁 Types)";
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				3EE2E7E52A58A52E00F9CF50 /* LoginViewModel.swift in Sources */,
 				3EE2E7D92A58A03D00F9CF50 /* ProfileViewModel.swift in Sources */,
 				3EE2E7C22A589DFF00F9CF50 /* NewItemView.swift in Sources */,
+				3EE2E7EC2A5B0AA400F9CF50 /* Extensions.swift in Sources */,
 				3EE2E7C52A589E8300F9CF50 /* TodoItemView.swift in Sources */,
 				3EE2E7DF2A58A06E00F9CF50 /* TodoListItemViewModel.swift in Sources */,
 				3EE2E7E32A58A51F00F9CF50 /* LoginView.swift in Sources */,

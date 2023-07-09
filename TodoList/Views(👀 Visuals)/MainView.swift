@@ -10,9 +10,16 @@ import SwiftUI
 // MARK: Main View
 
 struct MainView: View {
+    @StateObject var viewModel = MainViewModel()
     var body: some View {
-        VStack {
-            LoginView()
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            // signed in
+            TodoListView()
+        } else {
+            // NOT signed in
+            VStack {
+                LoginView()
+            }
         }
     }
 }
