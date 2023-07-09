@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct HeaderView: View {
-    @State var backgroundColor: Color
-    @State var textColor: Color
-    @State var angle: Double
-    @State var title: String
-    @State var subtitle: String
+    let backgroundColor: Color
+    let textColor: Color
+    let angle: Double
+    let title: String
+    let subtitle: String
 
     var body: some View {
         ZStack {
@@ -38,6 +38,12 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(backgroundColor: Color.pink, textColor: Color.white, angle: -15, title: "Todo List", subtitle: "Get Things Done")
+        HeaderView(
+            backgroundColor: Color.pink,
+            textColor: Color.white,
+            angle: -15,
+            title: "Todo List",
+            subtitle: "Get Things Done"
+        )
     }
 }

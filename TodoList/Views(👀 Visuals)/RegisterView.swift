@@ -8,10 +8,29 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State var name: String = ""
+    @State var email: String = ""
+    @State var password: String = ""
+
     var body: some View {
         VStack {
             // MARK: Header
-            HeaderView(backgroundColor: Color.yellow, textColor: Color.white, angle: 15, title: "Register", subtitle: "Sign Up Today")
+            HeaderView(
+                backgroundColor: Color.yellow,
+                textColor: Color.white,
+                angle: 15,
+                title: "Register",
+                subtitle: "Sign Up Today"
+            )
+            Form {
+                TextField("First Name", text: $name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TextField("Email", text: $email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                TextField("Password", text: $password)
+                    .textFieldStyle(DefaultTextFieldStyle())
+            }
+            Spacer()
 
         }
     }
