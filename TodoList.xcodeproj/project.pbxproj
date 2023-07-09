@@ -97,17 +97,17 @@
 				3E6966162A589A4200034D34 /* Models(🐈🐈‍⬛🦁 Types) */,
 				3E6966172A589AEC00034D34 /* ViewModels(⚙️ Logic) */,
 				3E6966152A589A2500034D34 /* Views(👀 Visuals) */,
-				3E6966042A58844A00034D34 /* Preview Content(😶‍🌫️ Mock Data) */,
+				3E6966042A58844A00034D34 /* Preview Content(😶‍🌫️ Test Data) */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
 		};
-		3E6966042A58844A00034D34 /* Preview Content(😶‍🌫️ Mock Data) */ = {
+		3E6966042A58844A00034D34 /* Preview Content(😶‍🌫️ Test Data) */ = {
 			isa = PBXGroup;
 			children = (
 				3E6966052A58844A00034D34 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content(😶‍🌫️ Mock Data)";
+			path = "Preview Content(😶‍🌫️ Test Data)";
 			sourceTree = "<group>";
 		};
 		3E6966152A589A2500034D34 /* Views(👀 Visuals) */ = {
@@ -384,7 +384,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content(😶‍🌫️ Mock Data)\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content(😶‍🌫️ Test Data)\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";
@@ -412,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content(😶‍🌫️ Mock Data)\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content(😶‍🌫️ Test Data)\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var viewModel = LoginViewViewModel()
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView {
@@ -21,7 +21,10 @@ struct LoginView: View {
                     title: "Todo List",
                     subtitle: "Get Things Done"
                 )
-                
+                if !viewModel.errorMessage.isEmpty {
+                    Text(viewModel.errorMessage)
+                        .foregroundColor(.red)
+                }
                 // MARK: Login Form
                 Form {
                     TextField("Email Address", text: $viewModel.email)
@@ -34,7 +37,7 @@ struct LoginView: View {
                         title: "Login",
                         background: .blue
                     ) {
-                        // onClick()
+                        viewModel.login()
                     }
                 }
                 
