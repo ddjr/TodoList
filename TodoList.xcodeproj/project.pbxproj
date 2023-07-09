@@ -31,6 +31,7 @@
 		3EE2E7E32A58A51F00F9CF50 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */; };
 		3EE2E7E52A58A52E00F9CF50 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */; };
 		3EE2E7E82A58A85A00F9CF50 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */; };
+		3EE2E7EA2A5AF0A200F9CF50 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2E7E92A5AF0A200F9CF50 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3EE2E7E42A58A52E00F9CF50 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3EE2E7E92A5AF0A200F9CF50 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				3E6966002A58844800034D34 /* MainView.swift */,
 				3EE2E7E22A58A51F00F9CF50 /* LoginView.swift */,
+				3EE2E7E92A5AF0A200F9CF50 /* TLButton.swift */,
 				3EE2E7E72A58A85A00F9CF50 /* HeaderView.swift */,
 				3E6966192A589D9D00034D34 /* ProfileView.swift */,
 				3EE2E7D42A589F8B00F9CF50 /* RegisterView.swift */,
@@ -242,6 +245,7 @@
 				3EE2E7DD2A58A05A00F9CF50 /* TodoListViewModel.swift in Sources */,
 				3EE2E7D52A589F8B00F9CF50 /* RegisterView.swift in Sources */,
 				3E69661A2A589D9D00034D34 /* ProfileView.swift in Sources */,
+				3EE2E7EA2A5AF0A200F9CF50 /* TLButton.swift in Sources */,
 				3EE2E7D72A58A03200F9CF50 /* MainViewModel.swift in Sources */,
 				3EE2E7C92A589ED100F9CF50 /* Todo.swift in Sources */,
 				3E6965FF2A58844800034D34 /* TodoListApp.swift in Sources */,
