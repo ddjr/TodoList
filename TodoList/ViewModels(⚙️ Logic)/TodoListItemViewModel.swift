@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class TodoListItemViewModel: ObservableObject {
+    init() {}
+}
