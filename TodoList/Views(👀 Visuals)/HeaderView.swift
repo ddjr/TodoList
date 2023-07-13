@@ -13,7 +13,6 @@ struct HeaderView: View {
     let angle: Double
     let title: String
     let subtitle: String
-
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 0)
@@ -23,7 +22,6 @@ struct HeaderView: View {
             VStack {
                 Text(title)
                     .foregroundColor(textColor)
-                    
                     .font(.title)
                     .bold()
                 Text(subtitle)
