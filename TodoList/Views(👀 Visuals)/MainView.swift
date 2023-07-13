@@ -26,7 +26,7 @@ struct MainView: View {
     @ViewBuilder
     var accountView: some View {
         TabView {
-            TodoListView(userid: viewModel.currentUserId)
+            TodoListView(userId: viewModel.currentUserId)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

@@ -9,12 +9,16 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct TodoListView: View {
-    @StateObject var viewModel = TodoListViewModel()
+    @StateObject var viewModel: TodoListViewModel
     @FirestoreQuery var items: [Todo]
-    init(userid: String) {
+
+    init(userId: String) {
         self._items = FirestoreQuery(
-            collectionPath: "users/\(userid)/todos")
-        // users/<id>/todos/<entries>
+            collectionPath: "users/\(userId)/todos"
+        )
+        self._viewModel = StateObject(
+            wrappedValue: TodoListViewModel(userId: userId)
+        )
     }
 
     var body: some View {
@@ -26,8 +30,7 @@ struct TodoListView: View {
                             Button("Delete") {
                                 viewModel.delete(id: item.id)
                             }
-                            
-                            
+                            .tint(.red)
                         }
                 }
                 .listStyle(PlainListStyle())
@@ -50,6 +53,6 @@ struct TodoListView: View {
 
 struct TodoListView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoListView(userid: "f0nT9pX5e0OOQ75JHJPQ8Xto4YZ2")
+        TodoListView(userId: "f0nT9pX5e0OOQ75JHJPQ8Xto4YZ2")
     }
 }
