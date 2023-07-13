@@ -6,7 +6,10 @@
 //
 
 import Foundation
-
+/// VewModel for list of items view
+/// Primary tab
 class TodoListItemViewModel: ObservableObject {
+    
+    @Published var showingNewitemView = false
     init() {}
 }

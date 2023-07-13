@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct TodoItemView: View {
+    @StateObject var viewModel = ProfileViewModel()
+
+    let item: Todo
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(item.title)
+                Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+                    .font(.footnote)
+                    .foregroundColor(Color.gray)
+            }
+            Spacer()
+            Button {
+                viewModel.toggleIsDone(item: item)
+            } label: {
+                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+            }
+        }
+        .padding()
     }
 }
 
 struct TodoItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoItemView()
+        TodoItemView(item: .init(
+            id: "123",
+            title: "Get Eggs",
+            dueDate: Date().timeIntervalSince1970,
+            CreatedDate: Date().timeIntervalSince1970,
+            isDone: true))
     }
 }
