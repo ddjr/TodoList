@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodoItemView: View {
-    @StateObject var viewModel = ProfileViewModel()
+    @StateObject var viewModel = TodoListItemViewModel()
 
     let item: Todo
     var body: some View {
@@ -24,6 +24,7 @@ struct TodoItemView: View {
                 viewModel.toggleIsDone(item: item)
             } label: {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                    .foregroundColor(Color.green)
             }
         }
         .padding()
