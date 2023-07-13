@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseAuth
+import FirebaseFirestore
 
 class NewItemViewModel: ObservableObject {
     @Published var title = ""
@@ -17,6 +19,32 @@ class NewItemViewModel: ObservableObject {
     }
     
     func save () {
+        guard canSave
+        else {
+            return
+        }
+        // Get current user id
+        guard let userID = Auth.auth().currentUser?.uid
+        else {
+            return
+        }
+        // Create a model
+        let newID = UUID().uuidString
+        let newItem = Todo(
+            id: newID,
+            title: title,
+            dueDate: dueDate.timeIntervalSince1970,
+            CreatedDate: Date().timeIntervalSince1970,
+            isDone: false
+        )
+        
+        // Save model
+        let db = Firestore.firestore()
+        db.collection("users")
+            .document(userID)
+            .collection("todos")
+            .document(newID)
+            .setData(newItem.asDictionary())
         
     }
     
