@@ -1,4 +1,4 @@
-//
+// points on the board
 //  MainView.swift
 //  TodoList
 //
