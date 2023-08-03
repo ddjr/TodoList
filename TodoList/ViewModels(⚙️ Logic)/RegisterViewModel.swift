@@ -1,4 +1,4 @@
-// comment
+//
 //  RegisterViewModel.swift
 //  TodoList
 //
